@@ -28,9 +28,7 @@ public class Application
         IServiceProvider serviceProvider
     )
     {
-        //_token = config.GetSection("DiscordToken").Get<string>() ?? "";
-        //
-        _token = "MTA3MDM3MTUwNDM3MTUzMTc5Ng.GZYLEC.ILlG7TISvbHPUtwjNmR1cXGlxYuTFMNmWpktJY";
+        _token = config.GetSection("DiscordToken").Get<string>() ?? "";
         _logger = logger;
         _discordSocketClient = discordSocketClient;
         _interactionService = interactionService;
